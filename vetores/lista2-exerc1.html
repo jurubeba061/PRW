@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercicio 1 da lista 2 Vetores</title>
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <style media="screen">
+        .container{ border: 2px solid #26a69a;}
+        h4{ text-align: center; color: #26a69a;}
+      </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Censo demografico com vetor em PHP</h4>
+      <div class="row">
+        <form class="col s12 m6 l6 offset-l2" action="lista2-exerc1.php" method="post">
+          <label>Selecione a capital desejada</label>
+          <div class="input-field">
+            <select name="capital">
+              <option value="1">Porto Alegre</option>
+              <option value="2">Recife</option>
+              <option value="3">Rio de Janeiro</option>
+              <option value="4">Salvador</option>
+              <option value="5">São Paulo</option>
+              <option value="6">Florianópolis</option>
+            </select>
+          </div>
+          <p>
+           <input name="operacao" type="radio" id="1" />
+           <label for="1">Mostrar população</label>
+          </p>
+           <p>
+             <input name="operacao" type="radio" id="2" />
+             <label for="2">Mostrar vetor</label>
+           </p>
+           <p>
+             <input name="operacao" type="radio" id="3"  />
+             <label for="3">Calcular media populacional</label>
+           </p>
+           <p>
+             <input name="operacao" type="radio" id="4"  />
+             <label for="4">Mostrar numero da capital acima da media</label>
+           </p>
+           <p>
+             <input name="operacao" type="radio" id="5"  />
+             <label for="5">Ordenar por habitantes</label>
+           </p>
+           <p>
+             <input name="operacao" type="radio" id="6"  />
+             <label for="6">Mostrar capital com menas população</label>
+           </p>
+           <p>
+             <input name="operacao" type="radio" id="7"  />
+             <label for="7">capital com mais de 1.000.000 habitantes</label>
+           </p>
+           <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            <i class="material-icons right">submit</i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('select').material_select();
+        });
+    </script>
+  </body>
+</html>
