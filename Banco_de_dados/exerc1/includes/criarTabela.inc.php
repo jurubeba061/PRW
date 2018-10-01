@@ -7,6 +7,6 @@
 		nota1 DECIMAL(3,1),
 		nota2 DECIMAL(3,1)
 	)";
-	$resultado = $con->query($sql) or die($con->error);
+	$resultado = $link->query($sql) or die($link->error);
 
  ?>
