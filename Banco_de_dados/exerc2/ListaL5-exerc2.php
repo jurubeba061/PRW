@@ -58,12 +58,13 @@
 
 		#testar botao submit cadastrar
 		if (isset($_POST['cadastrar'])) {
-			# code...
+			require 'includes/cadastrar.inc.php';
 		}
 		elseif (isset($_POST['outras-operacoes'])) {
-			# code...
+			require 'includes/outras-operacoes.inc.php';
 		}
 
+		require 'includes/desconect.inc.php';
 	 ?>
 	
 </body>
