@@ -54,17 +54,17 @@
 		require 'includes/selectDB.inc.php';
 		require 'includes/definirCharset.inc.php';
 		require 'includes/criarTabela.inc.php';
-		require 'includes/desconect.inc.php';
 
 		#testar botao submit cadastrar
 		if (isset($_POST['cadastrar'])) {
 			require 'includes/cadastrar.inc.php';
 		}
 		elseif (isset($_POST['outras-operacoes'])) {
-			require 'includes/outras-operacoes.inc.php';
+			require 'includes/outrasOperacoes.inc.php';
 		}
 
 		require 'includes/desconect.inc.php';
+
 	 ?>
 	
 </body>

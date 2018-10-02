@@ -1,4 +1,4 @@
-0<?php 
+<?php 
 	
 	//criar a tabela projeto_integrador
 	$sql = "CREATE TABLE IF NOT EXISTS $tabela(
