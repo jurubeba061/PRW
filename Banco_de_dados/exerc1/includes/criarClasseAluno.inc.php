@@ -8,7 +8,7 @@
 		
 		//metodo para receber os dados do formulario
 		//sempre usar os metodos de prevenção contra injeção de sql
-		function receberDados($link){
+		function receberDados($con){
 			$matricula = trim($con->escape_string($_POST['matricula']));
 			$uc        = trim($con->escape_string($_POST['uc']));
 			$nota1     = trim($con->escape_string($_POST['nota1']));
