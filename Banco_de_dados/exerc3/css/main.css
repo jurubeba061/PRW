@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+h1{
+	margin: 0;
+	text-align: center;
+	border: 1px solid #4a148c;
+	background: #4a148c;
+	color: #fff;
+	box-shadow: 0 0 1px 1px rgba(22, 6, 8, 0.7);
+	margin-bottom: 20px;
+}
+
+label.alinha{
+	display: inline-block;
+	width: 250px;
+	margin-top: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+input[type="text"], input[type="number"], input[type="date"], input[type="email"]{
+	border: 1px solid #2b0238;
+	font-family: 'Lato', sans-serif;
+	padding-left: 3px;
+	font-size: 17px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="email"]:focus{
+	box-shadow: 2px 2px 4px rgba(71, 0, 22, 0.7);
+}
+fieldset{
+	width: 60%;
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid #4a148c;
+}
+button{
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+	background: #4a148c;
+	padding: 10px;
+	border: 1px solid #4a148c;
+	border-radius: 3px;
+	font-weight: bold;
+	display: block;
+	margin: 30px auto;
+	box-shadow: 1px 1px 1px rgba(91, 0, 141, 0.9);
+}
+
+table{
+	width: 60%;
+	margin: 20px auto;
+	border: 1px solid #4a148c;
+	border-spacing: 2px;
+}
+th, td{
+	border: 1px solid #4a148c;
+}
+
+th{
+	background: #4a148c;
+	color: #fff;
+}
+td {
+	padding-left: 10px;
+	background: #4a148c;
+	color: #fff !important;
+}
+div.botoes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 60%;
+	margin: 40px auto;
+}
