@@ -68,9 +68,25 @@
 		require 'includes/selectDB.inc.php';
 		require 'includes/definirCharset.inc.php';
 		require 'includes/criarTabela.inc.php';
+		
 		if (isset($_POST['cadastrar'])) {
 			require 'includes/cadastrar.inc.php';
 
+		}
+		if (isset($_POST['alterar'])) {
+			require 'includes/alterar.inc.php';
+		}
+		if (isset($_POST['excluir'])) {
+			require 'includes/excluir.inc.php';
+		}
+		if (isset($_POST['listar1'])) {
+			require 'includes/listar1.inc.php';
+		}
+		if (isset($_POST['listar2'])) {
+			require 'includes/listar2.inc.php';
+		}
+		if (isset($_POST['totalizar'])) {
+			require 'includes/totalizar.inc.php';
 		}
 		require 'includes/desconect.inc.php';
 
