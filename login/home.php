@@ -24,7 +24,7 @@
         }
 
         if(isset($_POST['login'])){
-            #code
+            header("location: login.php");
         }
     ?>
 </body>

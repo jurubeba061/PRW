@@ -10,6 +10,7 @@
     <h1>Bem-vindo usuario especial (ou admin). Aqui, voce tem acesso a tópicos especiais de nosso sítio ou a funções
         privadas de nossa aplicação
     </h1>
+    <a href="includes/sair.php">sair</a>
     
 </body>
 </html>
