@@ -1,0 +1,56 @@
+.circle{
+    background: no-repeat center;
+    background-size: cover;
+}
+  header, main, footer {
+    padding-left: 0;
+}
+.white img{ margin-right: 0;}
+
+@media screen and (min-width : 992px) {
+    header, main, footer {
+        padding-left: 300px;
+      }
+    .white a { margin-left: 100px;}
+
+}
+.button-collapse i { margin-top: 10px; }
+#mobile-menu a{ color: rgb(2, 30, 58);}
+#mobile-menu i{ color: rgb(2, 30, 58);}
+
+.white {
+	height: 70px;
+}
+.white a { color: #104E8B;}
+.white img {
+	margin-top: 5px;
+	width: 199px;
+    height: 60px;
+}
+.cartoes{
+    margin-top: 25px;
+    height: 140px;
+}
+.cartoes-maiores{
+    margin-top: 25px;
+    height: 260px;
+}
+.cartoes-maiores .texto-enfase{
+    font-size: 1.5em;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  .texto-enfase{
+      font-weight: bold;
+      font-size: 2.5em;
+  }
+  .alinhar-view{
+      margin-top: 35px;
+  }
