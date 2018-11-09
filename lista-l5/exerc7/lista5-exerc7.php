@@ -51,11 +51,11 @@
 			if(isset($_POST["cadastrar"])){
 				$carro = new Carro();
 				
-				$modelo     = $_POST['modelo'];
-				$preco      = $_POST['preco'];
-				$fabricante = $_POST['fabricante'];
-				$ano        = $_POST['ano'];
-				$cat        = $_POST['categoria'];
+				$modelo     = trim($link->escape_string($_POST['modelo']));
+				$preco      = trim($link->escape_string($_POST['preco']));
+				$fabricante = trim($link->escape_string($_POST['fabricante']));
+				$ano        = trim($link->escape_string($_POST['ano']));
+				$cat        = trim($link->escape_string($_POST['categoria']));;
 				#========================================
 				$carro->setModelo($modelo);
 				$carro->setPreco($preco);
@@ -77,7 +77,20 @@
 			if(isset($_POST['consulta-carros'])){
 				$cDAO->listarCarrosUsados();
 			}
-				
+			if(isset($_POST['excluir'])){
+				$dados = $cDAO->deleteCarros();
+				?>
+					<script>
+						window.onload = function(){
+							alert("<?php echo $dados; ?>");
+						};
+					</script>
+				<?php
+			}
+			if(isset($_POST['listar-preco'])){
+				$cDAO->getCarrosNovos();
+			}
+		$cDAO->desconnect();
 	?>
 	
 	</body>

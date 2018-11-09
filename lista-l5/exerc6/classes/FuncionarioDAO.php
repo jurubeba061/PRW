@@ -55,10 +55,10 @@ class FuncionarioDAO{
         ";
         while($dados = $resultado->fetch_array()){
             # primeiro pega os dados
-            $matricula = $dados[0];
-            $nome      = $dados[1];
-            $salario   = $dados[2];
-            $tempo     = $dados[3];
+            $matricula = htmlentities($dados[0], ENT_QUOTES, "UTF-8");
+            $nome      = htmlentities($dados[1], ENT_QUOTES, "UTF-8");
+            $salario   = htmlentities($dados[2], ENT_QUOTES, "UTF-8");;
+            $tempo     = htmlentities($dados[3], ENT_QUOTES, "UTF-8");
             #pegamos o salario e o tempo de serviço e para fazer o calculo do salario total
             if($tempo < 10){
                 $salarioTotal = ($tempo * 5/100 * $salario) + $salario;

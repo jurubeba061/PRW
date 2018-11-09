@@ -57,10 +57,10 @@
 
 				if(isset($_POST["cadastrar"])){
 				# pega os dados do form
-				$matricula = $_POST['matricula'];
-				$nome      = $_POST['nome'];
-				$salario   = $_POST['salario'];
-				$tempo     = $_POST['tempo'];
+				$matricula = trim($link->escape_string($_POST['matricula']));
+				$nome      = trim($link->escape_string($_POST['nome']));
+				$salario   = trim($link->escape_string($_POST['salario']));
+				$tempo     = trim($link->escape_string($_POST['tempo']));
 
 				$funcionario->setMatricula($matricula);
 				$funcionario->setNome($nome);
@@ -78,8 +78,8 @@
 				}
 				if(isset($_POST['alterar'])){
 					# pega os dados
-					$matricula   = $_POST['busca-matricula'];
-					$novoSalario = $_POST['altera-salario'];
+					$matricula   = trim($link->escape_string($_POST['busca-matricula']));
+					$novoSalario = trim($link->escape_string($_POST['altera-salario']));
 					# passa os atributos pro objeto
 					$funcionario->setMatricula($matricula);
 					$funcionario->setSalario($novoSalario);

@@ -45,7 +45,7 @@
 				$operacao = $_POST['operacao'];
 				if($operacao == "cadastro"){
 					# pega os dados do formulario
-					$nome = trim($link->escape_string($_POST['produto']));
+					$nome  = trim($link->escape_string($_POST['produto']));
 					$preco = trim($link->escape_string($_POST['preco']));
 					# seta os atributos
 					$produto->setNome($nome);

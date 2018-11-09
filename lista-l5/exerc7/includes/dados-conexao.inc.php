@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
-$usuario = "admin";
-$senha = "admin";
+$usuario = "root";
+$senha = "aluno";
 $nomeDoBanco = "exercicios";
 $nomeDaTabela = "carros";
 
